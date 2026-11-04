@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple portfolio and collection of work." />
+    <title>Lagier Was Here — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to the top of the page">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>lagier<span class="muted">/</span>was<span class="muted">/</span>here</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Available for new builds</p>
+        <h1 id="hero-title">I make things<br /><span class="outline-text">worth exploring.</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-intro">
+            A builder, designer, and curious mind making useful digital experiences
+            one block at a time.
+          </p>
+          <a class="arrow-link" href="#work">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-index">01 / Selected work</p>
+          <h2 id="work-title">Built with purpose.</h2>
+        </div>
+        <div class="work-grid" id="work-grid"></div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-index">02 / A little about me</p>
+          <h2 id="about-title">Simple tools.<br />Thoughtful details.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I care about the space between an idea and the people who use it. My
+            work blends clear design, careful code, and a little bit of play.
+          </p>
+          <p>
+            When I am not building, I am usually learning something new, exploring
+            a new world, or making a list of things to build next.
+          </p>
+          <div class="tool-list" aria-label="Tools and skills">
+            <span>Design systems</span>
+            <span>Web development</span>
+            <span>Creative direction</span>
+            <span>Prototyping</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="section-index">03 / Say hello</p>
+        <h2 id="contact-title">Have a project<br /><span class="outline-text">in mind?</span></h2>
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Lagier Was Here</span>
+      <span>Made with intention <span class="muted">/</span> no clutter</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
