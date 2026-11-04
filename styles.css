@@ -77,6 +77,23 @@ h2 { font-size: clamp(3rem, 7vw, 6.5rem); }
 .tool-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 44px; }
 .tool-list span { padding: 6px 9px; border: 1px solid var(--line); color: var(--white); font-size: 11px; }
 
+.presence-card { display: flex; align-items: center; gap: 22px; min-height: 150px; padding: 24px; border: 1px solid var(--line); background: #111; }
+.presence-avatar-wrap { position: relative; flex: 0 0 76px; width: 76px; height: 76px; }
+.presence-avatar { width: 100%; height: 100%; object-fit: cover; background: #242424; image-rendering: pixelated; }
+.presence-indicator { position: absolute; right: -3px; bottom: -3px; width: 18px; height: 18px; border: 3px solid #111; border-radius: 50%; background: var(--muted); }
+.presence-indicator.online { background: #43b581; }
+.presence-indicator.idle { background: #faa61a; }
+.presence-indicator.dnd { background: #f04747; }
+.presence-details { flex: 1; min-width: 0; }
+.presence-label { margin: 0 0 5px; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.presence-details h3 { margin: 0; font-size: 20px; letter-spacing: -.05em; }
+.presence-details > p:not(.presence-label) { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+.spotify-line { display: flex; gap: 9px; margin-top: 15px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+.spotify-icon { color: #1ed760; font-size: 18px; }
+.spotify-line strong { color: var(--white); font-weight: 400; }
+.presence-link { align-self: flex-start; font-size: 11px; color: var(--muted); }
+.presence-link:hover { color: var(--white); }
+
 .contact-section { padding: 140px 0 160px; border-top: 1px solid var(--line); }
 .contact-section h2 { margin: 65px 0 65px; font-size: clamp(4rem, 10vw, 9rem); }
 .email-link { display: inline-block; padding-bottom: 8px; border-bottom: 1px solid var(--white); font-size: clamp(1rem, 2vw, 1.4rem); }
@@ -95,6 +112,8 @@ h2 { font-size: clamp(3rem, 7vw, 6.5rem); }
   .section-heading h2 { margin-top: 45px; }
   .work-grid { grid-template-columns: 1fr; gap: 42px; }
   .about-copy { padding-top: 45px; }
+  .presence-card { align-items: flex-start; flex-wrap: wrap; }
+  .presence-link { margin-left: 98px; margin-top: -22px; }
   .contact-section { padding: 100px 0 120px; }
 }
 
